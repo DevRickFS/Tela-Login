@@ -1,0 +1,115 @@
+*{ 
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    outline: 0;
+    list-style: none;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 12fr .5fr;
+    height: 100vh;
+}
+
+
+.cabecalho{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 8px 24px;
+}
+#user-profile{
+    height: 64px;
+    border: 1px solid  rgb(2, 2, 43);
+    border-radius: 50%;
+}
+
+.navigation{
+    display: flex;
+    gap: 24px;
+
+}
+
+.navigation a{
+    color: rgb(2, 2, 43);
+    text-transform: capitalize;
+    padding: 4px 16px;
+    cursor: pointer;
+}
+.navigation a:hover{
+    transition: .3s;
+    background-color: rgb(241, 241, 241);
+    border-radius: 8px;
+    box-shadow:   8px 8px 16px #bebebe,
+    -8px -8px 16px #ffffff;
+}
+.conteudo-principal{
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs{
+    background-color: rgb(241, 241, 241);
+    width: 320px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(241, 241, 241);
+    box-shadow:   8px 8px 16px #bebebe,
+    -8px -8px 16px #ffffff;
+}
+
+button{
+    font-weight: 600;
+    background-color: rgb(2, 2, 43);
+    color: #ffffff;
+    padding: 8px 80px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.inputs:focus {
+    transition: .4s ;
+    border-bottom: 0.5px solid rgb(2, 2, 43);
+}
+
+#img-usuario{
+    width: 92px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 992px){
+    #image-login{
+        display: none;
+    }
+    .conteudo-principal{
+    grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 602px){
+    .cabecalho {
+        justify-content: center;
+        gap: 16px;
+    }
+}
